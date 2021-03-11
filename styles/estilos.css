@@ -1,0 +1,144 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*slide-----------------------------------------------------------------------------------*/
+
+/*menu sociales aside*/
+
+.social-container{
+    width: 5%;
+    min-width: 70px;
+    max-width: 100px;
+    position: fixed;
+    right: 0;
+    top: 30%;
+    z-index: 20;
+}
+.menu-social{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.menu-social li{
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    line-height: 2em;
+    transition: 0.1s;
+    transform-origin: right;
+}
+.menu-fb1 {
+    background: blue;
+    border-radius: 10px 0 0 0;
+}
+.menu-fb1 i{
+    color: rgb(255, 255, 255);
+}
+.menu-tw1{
+    background:rgb(147, 211, 233);
+}
+.menu-tw1 i{
+    color: white;
+}
+.menu-yt1{
+    background: red;
+    border-radius: 0 0 0 10px;
+}
+.menu-yt1 i{
+    color: white;
+}
+.social-container li:hover{
+    transform: scale(1.2, 1);
+    transition: 0.1s;
+}
+
+/*-----------------------------------------------------------------------------*/
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-image: url(../images/descarga.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.logo-img{
+    font-size: 8em;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+.btn-menu{
+   background: white;
+}
+
+.mynav{
+    background: blue !important;
+}
+.mynav a{
+    color: white !important;
+}
+.mynav  li:hover{
+    background: darkblue;
+}
+
+.card *:not(a){
+    color: blue;
+   
+}
+.card a{
+    background: darkblue;
+}
+/*  item paquetes-----------------------------------------------*/
+.item-paquete{
+    font-size: 7em;
+    text-align: center;
+    margin-top: 10px;  
+}
+
+/*footer--------------------------------------------------------*/
+.footer{
+    background: black;
+    color: white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+/* clases modificadas con js*/
+.img-fit{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.center-item{
+    text-align: center;
+}
+/*----------------------*/
+@media (max-width: 800px) {
+    .menu-social li{
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+}
+
+@media (max-width: 600px){
+    .img-fit{
+        height: 450px;
+    }
+    .menu-social li{
+        font-size: 1.3em;
+        line-height: 2em;
+    }
+}
+@media (max-width: 450px){
+    .img-fit{
+        height: 250px;
+    }
+}
