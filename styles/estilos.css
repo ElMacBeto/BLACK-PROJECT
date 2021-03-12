@@ -163,7 +163,7 @@ footer a i{
         line-height: 2em;
     }
 }
-@media (max-width: 450px){
+@media (max-width: 500px){
     .img-fit{
         height: 250px;
     }
