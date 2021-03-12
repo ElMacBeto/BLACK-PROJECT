@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/estilos.css">
 </head>
 <body>
+    <!-- header --------------------------------------------------------------------------------------------------------------------->
     <header class="bg-blue container-fluid sticky-top bg-light">
         <nav class="navbar navbar-light ">
             <div class="container-fluid">
@@ -33,9 +34,8 @@
     <section class="container-fluid logo ">
         <i class="fab fa-drupal logo-img"></i>
     </section>
-
-   <!-- menu ---------------------------------------------------------------------------- -->
-   <nav class="navbar navbar-expand-lg navbar-light  mynav">
+     <!-- menu ------------------------------------------------------------------------------------------------------------------ -->
+     <nav class="navbar navbar-expand-lg navbar-light  mynav">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Inicio</a>
             <button class="navbar-toggler btn-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,127 +59,136 @@
             </div>
         </div>
     </nav>
-   <!-- --------------------------------------------------------------------------------- -->
-<div class="container">
-    <h2 class="mb-5 mt-5">Promociones</h2>
-</div>   
-<!--corrucel    ----------------------------------------------------------------------------------------     -->
-<div class="container">
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="images/slide-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="images/slide-2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/slide-3.jpg" class="d-block w-100" alt="...">
-          </div>
+<!-- -----titulo promociones----------------------------------------------------------------------------------------------------------------- -->
+    <div class="container-fluid bg-white">
+    <div class="container-fluid txt-container">
+        <div class="container border-title">
+            <h2 >Promociones</h2>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-</div>
+    </div>   
 
-<!--  ------------------------------------------------------------------------------------------------ -->
-<div class="container">
-    <h2 class="mb-5 mt-5">Paquetes</h2>
-</div>  
-
-<!-- menu social aside ----------------------------------------------------------------------------------->
-<div class="social-container">
-    <ul class="menu-social">
-        <li class="menu-fb1"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li class="menu-tw1"><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li class="menu-yt1"><a href="#"><i class="fab fa-youtube"></i></a></li>
-    </ul>
-</div>
-<!--paquetes ----------------------------------------------------------------------------------------------------------------  -->
+    <!--slide ---------------------   ----------------------------------------------------------------------------------------     -->
     <div class="container">
-        <div class="row">
-            <div class="card col-12 col-sm-6 col-lg-4">
-                <i class="fas fa-box-open item-paquete"></i>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="images/slide-1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/slide-2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/slide-3.jpg" class="d-block w-100" alt="...">
+              </div>
             </div>
-            <div class="card col-12 col-sm-6 col-lg-4">
-                <i class="fas fa-box-open item-paquete"></i>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    
+    <!-- titulo paquetes------------ ------------------------------------------------------------------------------------------------ -->
+    <div class="container-fluid txt-container">
+        <div class="container border-title">
+            <h2 class="">Paquetes</h2>
+        </div>
+    </div>  
+    
+    <!-- menu social aside --------------------------------------------------------------------------------------------------------->
+    <div class="social-container">
+        <ul class="menu-social">
+            <li class="menu-fb1"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="menu-tw1"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="menu-yt1"><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </div>
+    <!--contenido de los paquetes ----------------------------------------------------------------------------------------------------------------  -->
+        <div class="container p-4">
+            <div class="row">
+                <div class="card col-12 col-sm-6 col-lg-4">
+                    <i class="fas fa-box-open icon-paquete"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Paquete 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Ver</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card col-12 col-sm-6 col-lg-4">
-                <i class="fas fa-box-open item-paquete"></i>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card col-12 col-sm-6 col-lg-4">
+                    <i class="fas fa-box-open icon-paquete"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Paquete 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Ver</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card col-12 col-sm-6 col-lg-4">
-                <i class="fas fa-box-open item-paquete"></i>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card col-12 col-sm-6 col-lg-4">
+                    <i class="fas fa-box-open icon-paquete"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Paquete 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Ver</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card col-12 col-sm-6 col-lg-4">
-                <i class="fas fa-box-open item-paquete"></i>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card col-12 col-sm-6 col-lg-4">
+                    <i class="fas fa-box-open icon-paquete"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Paquete 4</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Ver</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card col-12 col-sm-6 col-lg-4">
-                <i class="fas fa-box-open item-paquete"></i>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card col-12 col-sm-6 col-lg-4">
+                    <i class="fas fa-box-open icon-paquete"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Paquete 5</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Ver</a>
+                    </div>
                 </div>
+                <div class="card col-12 col-sm-6 col-lg-4">
+                    <i class="fas fa-box-open icon-paquete"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Paquete 6</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+                
             </div>
-            
         </div>
     </div>
-<!--  footer--------------------------------------------------------------------------------------------------- -->
-    <footer>
-        <div class="container-fluid footer">
-            
+    <!--  footer------------------------------------------------------------------------------------------------------------------ -->
+    <footer class="container-fluid">
             <div class="row">
-                <div class="col-12 mb-5">
-                    <h3 col-12>
-                        Nombre de la empresa
+                <div class="col-12 d-flex justify-content-center">
+                    <h2 col-12>
+                        Blueexx
                     </h3>
                 </div>
-                <div class="col-4 ">
+                <div class="col-12 d-flex justify-content-center footer-item">
+                    <i class="fab fa-drupal logo-img"></i>
+                </div>
+                <div class="col-12 col-sm-4 mt-4 footer-item">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                 </div>
-                <div class="col-4 ">
-                    <a href="#"><i class="fab fa-twitter col-4"></i></a>
+                <div class="col-12 col-sm-8 mt-5 footer-item">
+                    <i class="fas fa-phone-volume"> 33 31 72 81 86</i>
                 </div>
-                <div class="col-4 ">
-                    <a href="#"><i class="fab fa-youtube col-4"></i></a>
+                <div class="col-12 footer-item mt-5">
+                    <a href="#">Niños heroes #111 Col. Cami</a>
+                    
                 </div>       
             </div>
-        </div>
+     
     </footer>
+    
 
-<!--  -->
-<!--  -->
+<!-- scripts-------------------------------------------------------------------------------------------------------------------- -->
 <script src="scripts/jquery.3.6.js"></script>
     <script src="https://kit.fontawesome.com/5c9d883baf.js" crossorigin="anonymous"></script>
     <!-- JavaScript Bundle with Popper -->
@@ -187,3 +196,4 @@
 <script src="scripts/styles.js"></script>
 </body>
 </html>
+
