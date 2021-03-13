@@ -165,17 +165,23 @@ footer a i{
     }
 }
 
-@media (max-width: 650px){
+@media (max-width: 650px), (max-height: 400px){
     .img-fit{
-        height: 300px;
+        height: 250px;
     }
     .menu-social li{
         font-size: 1.3em;
         line-height: 2em;
     }
+    .icon-paquete{
+        font-size: 4em;
+    }
+    .card-text{
+        font-size: 0.7em;
+    }
 }
-@media (max-width: 550px){
+/* @media (max-width: 550px){
     .img-fit{
         height: 250px;
     }
-}
+} */
