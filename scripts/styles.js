@@ -1,5 +1,4 @@
 
-
 const $menu = $('.mynav');
 $('.carousel-item img').addClass('img-fit');
 $('.nav-item').addClass('center-item');
@@ -8,9 +7,10 @@ $menu.css('box-shadow', '0 5px 10px black');
 $('.mynav a').css('color', 'white');
 
 // efecto navbar
-const YMenu = document.getElementById('myMenu');
-const YnavMenu = document.getElementById('navMenu');
-const Yscroll = YMenu.offsetTop - YnavMenu.offsetHeight;
+const YMenu = document.getElementById('myMenu'),
+      YnavMenu = document.getElementById('navMenu'),
+      Yscroll = YMenu.offsetTop - YnavMenu.offsetHeight,
+      stickyVacio = document.getElementById('sticky-vacio');
 
 window.onscroll = function(){
     const yOffset = window.pageYOffset;
@@ -21,6 +21,5 @@ window.onscroll = function(){
     } else{
         YMenu.classList.remove('sticky-menu');
     };
-    
-    //console.log(`window: ${yOffset} y Menu:${YMenu - YnavMenu.offsetHeight}`);
+        //console.log(`window: ${yOffset} y Menu:${YMenu - YnavMenu.offsetHeight}`);
 };
