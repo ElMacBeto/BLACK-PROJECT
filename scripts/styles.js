@@ -12,7 +12,8 @@ const YMenu = document.getElementById('myMenu'),
       Yscroll = YMenu.offsetTop - YnavMenu.offsetHeight,
       stickyVacio = document.getElementById('sticky-vacio');
 
-var x = window.matchMedia("(min-width: 700px)");
+var x = window.matchMedia("(min-height: 600px)");
+
 window.onscroll = function(){
     const yOffset = window.pageYOffset;
     if(x.matches){
