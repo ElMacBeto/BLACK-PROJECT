@@ -149,7 +149,11 @@ footer a i{
     top: 56px;
     width: 100%;
     z-index:10 ;
+    transition: 0.3s;
 }
+.sticky-menu + div{
+    padding-top: 56px;
+  }
 /*--responvie images slide-------------------------------------------------------------------------------------------------------------*/
 @media (max-width: 800px) {
     .menu-social li{
@@ -163,7 +167,7 @@ footer a i{
 
 @media (max-width: 650px){
     .img-fit{
-        height: 280px;
+        height: 300px;
     }
     .menu-social li{
         font-size: 1.3em;
@@ -175,4 +179,3 @@ footer a i{
         height: 250px;
     }
 }
-
