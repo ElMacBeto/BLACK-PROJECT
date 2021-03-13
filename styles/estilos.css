@@ -167,7 +167,7 @@ footer a i{
 
 @media (max-width: 650px), (max-height: 400px){
     .img-fit{
-        height: 250px;
+        height: 280px;
     }
     .menu-social li{
         font-size: 1.3em;
