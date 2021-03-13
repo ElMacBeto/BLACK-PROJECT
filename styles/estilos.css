@@ -143,6 +143,13 @@ footer a i{
 .center-item{
     text-align: center;
 }
+/*sticky menu*/
+.sticky-menu{
+    position: fixed;
+    top: 56px;
+    width: 100%;
+    z-index:10 ;
+}
 /*--responvie images slide-------------------------------------------------------------------------------------------------------------*/
 @media (max-width: 800px) {
     .menu-social li{
@@ -150,13 +157,13 @@ footer a i{
         line-height: 2em;
     }
     .img-fit{
-        height: 400px;
+        height: 350px;
     }
 }
 
 @media (max-width: 650px){
     .img-fit{
-        height: 300px;
+        height: 280px;
     }
     .menu-social li{
         font-size: 1.3em;
@@ -168,3 +175,4 @@ footer a i{
         height: 250px;
     }
 }
+
