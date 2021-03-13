@@ -12,14 +12,19 @@ const YMenu = document.getElementById('myMenu'),
       Yscroll = YMenu.offsetTop - YnavMenu.offsetHeight,
       stickyVacio = document.getElementById('sticky-vacio');
 
+var x = window.matchMedia("(min-width: 700px)");
 window.onscroll = function(){
     const yOffset = window.pageYOffset;
-    
-    if(yOffset > Yscroll){
-        //console.log(YnavMenu.offsetHeight);
-        YMenu.classList.add('sticky-menu');
+    if(x.matches){
+        if(yOffset > Yscroll){
+            //console.log(YnavMenu.offsetHeight);
+            YMenu.classList.add('sticky-menu');
+        } else{
+            YMenu.classList.remove('sticky-menu');
+        };
     } else{
         YMenu.classList.remove('sticky-menu');
-    };
+    }
+   
         //console.log(`window: ${yOffset} y Menu:${YMenu - YnavMenu.offsetHeight}`);
 };
