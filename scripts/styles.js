@@ -12,11 +12,13 @@ const YMenu = document.getElementById('myMenu'),
       Yscroll = YMenu.offsetTop - YnavMenu.offsetHeight,
       stickyVacio = document.getElementById('sticky-vacio');
 
-var x = window.matchMedia("(min-height: 600px)");
+var heigthVp = window.matchMedia("(min-height: 550px)"),
+    itemsCar = document.getElementsByClassName('card');
 
 window.onscroll = function(){
     const yOffset = window.pageYOffset;
-    if(x.matches){
+    //console.log(x.matches);
+    if(heigthVp.matches){
         if(yOffset > Yscroll){
             //console.log(YnavMenu.offsetHeight);
             YMenu.classList.add('sticky-menu');
@@ -26,6 +28,18 @@ window.onscroll = function(){
     } else{
         YMenu.classList.remove('sticky-menu');
     }
-   
         //console.log(`window: ${yOffset} y Menu:${YMenu - YnavMenu.offsetHeight}`);
+    
+// efecto aparecer items-paquetes con el scroll--------------------------------------------
+    if(itemsCar[5].dataset.show === 'false'){
+        for(i=0; i<itemsCar.length;  i++){
+            if((itemsCar[i].offsetTop-550)<yOffset){
+                if(itemsCar[i].dataset.show == "false"){
+                    //console.log('funciona');
+                    itemsCar[i].classList.add('show');
+                    itemsCar[i].dataset.show = 'true';
+                };
+            };
+        };
+    }; 
 };
