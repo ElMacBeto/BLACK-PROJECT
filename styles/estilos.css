@@ -1,9 +1,10 @@
+
 *{
     font-family: 'Montserrat', sans-serif;
     background: var(--color1);
 }
 
-/*slide---------------------------------------------------------------------------------------*/
+/*background body---------------------------------------------------------------------------------------*/
 body{
     background-image: url(../images/descarga.jpg);
     background-position: center;
@@ -11,7 +12,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-/*menu sociales aside--------------------------------------------------------------------------*/
+/*menu redes sociales aside--------------------------------------------------------------------------*/
 .social-container{
     width: 5%;
     min-width: 70px;
@@ -76,19 +77,29 @@ body{
 .btn-menu{
    background: white;
 }
-
 .mynav  li:hover{
     background: darkblue;
 }
-
+/*modificacion a card de paquetes*/
 .card *:not(a){
     color: blue;
-   
 }
 .card a{
     background: darkblue;
 }
-/*-----container promo--------------------------------------------------------*/
+.card{
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    top: 70px;
+}
+.show{
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+    transition: 0.5s;
+}
+/*-----container promociones--------------------------------------------------------*/
 .border-title{
     border-bottom: 2px solid black;
 }
@@ -124,7 +135,6 @@ footer a i{
     text-align: center;
     background: blue;
     color: white;
-    
 }
 .footer-item:nth-child(3){
     border-right: 1px solid white;
@@ -134,7 +144,7 @@ footer a i{
     justify-content: center;
     align-items:flex-end;
 }
-/* clases agregadas con js-------------------------------------------------------------------------------------------------------------*/
+/* add with jquery-------------------------------------------------------------------------------------------------------------*/
 .img-fit{
     width: 100%;
     height: 500px;
@@ -154,7 +164,7 @@ footer a i{
 .sticky-menu + div{
     padding-top: 56px;
   }
-/*--responvie images slide-------------------------------------------------------------------------------------------------------------*/
+/*--responsive slide image and social media menu-------------------------------------------------------------------------------------------------------------*/
 @media (max-width: 800px) {
     .menu-social li{
         font-size: 1.5em;
@@ -164,10 +174,9 @@ footer a i{
         height: 350px;
     }
 }
-
 @media (max-width: 650px), (max-height: 400px){
     .img-fit{
-        height: 280px;
+        height: 250px;
     }
     .menu-social li{
         font-size: 1.3em;
