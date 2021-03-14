@@ -33,7 +33,7 @@ window.onscroll = function(){
 // efecto aparecer items-paquetes con el scroll--------------------------------------------
     if(itemsCar[5].dataset.show === 'false'){
         for(i=0; i<itemsCar.length;  i++){
-            if((itemsCar[i].offsetTop-550)<yOffset){
+            if((itemsCar[i].offsetTop-window.innerHeight*.8)<yOffset){
                 if(itemsCar[i].dataset.show == "false"){
                     //console.log('funciona');
                     itemsCar[i].classList.add('show');
